@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion-Budget</title>
+    <link rel="stylesheet" href="./css/styles.css">
+
+</head>
+<body>
+    <div class="contenue">
+        <div class="section1">
+            <h1>Gestion Budget</h1>
+            <!--Budget depenses et soldes-->
+            <div class="mouvement">
+                <div>
+                    <h2>Budget</h2>
+                    <div id="budget">
+                       <p>120.000f CFA</p>
+                    </div>
+                </div>
+                <div>
+                    <h2>Dépense</h2>
+                    <div id="budget">
+                       <p>100.000f CFA</p>
+                    </div>
+                </div>
+                <div class="budget1">
+                    <h2>Solde</h2>
+                    <div id="budget">
+                       <p>20.000f CFA</p>
+                    </div>
+                    <p><b>budget - depense = solde</b></p>
+                </div>
+            </div>
+            <!--Liste des dépenses-->
+            <div class="liste_depense">
+                <div class="titredep">
+                    <h2>Liste des Dépenses</h2>
+                    <button class="buttondep" type="submit">Ajouter Dépense</button>
+                </div>
+               <table>
+                    <thead>
+                        <tr>
+                            <th>Titre</th>
+                            <th>Montant</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Nouriture</td>
+                            <td>2000</td>
+                            <td>Modifier | Suprimer</td>
+                        </tr>
+                        <tr>
+                            <td>Café</td>
+                            <td>100</td>
+                            <td>Modifier | Suprimer</td>
+                        </tr>
+                    </tbody>
+               </table>
+            </div>
+            <!--Liste des Revenus-->
+            <div class="liste_depense">
+                <div class="titredep">
+                    <h2>Liste des Revenus</h2>
+                    <button class="buttonrev" type="submit">Ajouter Revenu</button>
+                </div>
+                <table>
+                     <thead>
+                         <tr>
+                             <th>Titre</th>
+                             <th>Montant</th>
+                             <th>Actions</th>
+                         </tr>
+                     </thead>
+                     <tbody>
+                         <tr>
+                             <td>Salaire</td>
+                             <td>300.000</td>
+                             <td>Modifier | Suprimer</td>
+                         </tr>
+                         <tr>
+                             <td>Bonus</td>
+                             <td>100</td>
+                             <td>Modifier | Suprimer</td>
+                         </tr>
+                     </tbody>
+                </table>
+             </div>
+        </div>
+        <!--Les deux Formulaire pour Ajouter Depense et Revenu-->
+        <div class="section2">
+            <div class="ajouter_depense">
+                <h2>Ajouter Depense</h2>
+                <table>
+                    <tr>
+                        <th>Titre</th>
+                        <td>Café</td>
+                    </tr>
+                    <tr>
+                        <th>Montant</th>
+                        <td>100</td>
+                    </tr>
+                </table>
+                <button class="buttondep" type="submit">Valider</button>
+            </div>
+            <div class="ajouter_revenus">
+                <h2>Ajouter Revenus</h2>
+                <table>
+                    <tr>
+                        <th>Titre</th>
+                        <td>Salaire</td>
+                    </tr>
+                    <tr>
+                        <th>Montant</th>
+                        <td>300.000</td>
+                    </tr>
+                </table>
+                <button class="buttonrev" type="submit">Valider</button>
+            </div>                            
+
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,130 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.section1{
+    border: 2px solid black;
+    border-radius: 20px;
+    margin: 15px;
+    padding: 0px;
+}
+h1{
+    text-align: center;
+    font-size: 2.3em;
+    font-style: normal;
+    letter-spacing: 5px;
+}
+.mouvement{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+
+    
+}
+#budget{
+    width: 150px;
+    height: 60px;
+    border: 2px solid black;
+    border-radius: 7px;
+    margin-left: 15px;
+    margin-right: 15px;
+    background: lightgrey;
+}
+
+p{
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.liste_depense{
+    box-sizing: border-box;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.section1 table{
+    border-collapse: collapse;
+    padding: 10px;
+    width: 100%;
+    caption-side: top;
+    background-color: rgb(141, 250, 114);
+}
+.section1 tr,th,td{
+    font-size: 1.2em;
+    text-align: center;
+    border: 2px solid black;
+    padding: 10px;
+}
+.titredep{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.buttondep{
+    width: 120px;
+    height: 45px;
+    border: 1px solid salmon;
+    border-radius: 7px;
+    background-color: rgb(114, 218, 250);
+    font-size: 0.8em;
+    font: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.buttonrev{
+    width: 120px;
+    height: 45px;
+    border: 1px solid salmon;
+    border-radius: 7px;
+    background-color: rgb(250, 114, 214);
+    font-size: 0.8em;
+    font: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.section2{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.section2 table{
+    border-collapse: collapse;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.section2 tr,th,td{
+    border: 2px solid black;
+    text-align: left;
+}
+.ajouter_depense{
+    padding: 25px;
+    border: 2px solid black;
+    width: 35%;
+    align-items: center;
+}
+.ajouter_depense h2{
+    text-align: center;
+}
+.ajouter_revenus{
+    padding: 25px;
+    border: 2px solid black;
+    width: 35%;
+    align-items: center;
+}
+.ajouter_revenus h2{
+    text-align: center;
+}
+@media screen  and (max-width:780px) {
+    body{
+        background-color: blue;
+    }
+    .mouvement{
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 0px;
+    }
+}
