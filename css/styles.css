@@ -4,9 +4,8 @@ body{
 }
 .section1{
     border: 2px solid black;
-    border-radius: 20px;
     margin: 15px;
-    padding: 0px;
+    padding-bottom: 35px;
 }
 h1{
     text-align: center;
@@ -30,7 +29,6 @@ h1{
     border-radius: 7px;
     margin-left: 15px;
     margin-right: 15px;
-    background: lightgrey;
 }
 
 p{
@@ -48,7 +46,6 @@ p{
     padding: 10px;
     width: 100%;
     caption-side: top;
-    background-color: rgb(141, 250, 114);
 }
 .section1 tr,th,td{
     font-size: 1.2em;
@@ -65,29 +62,29 @@ p{
     margin-left: 10px;
 }
 .buttondep{
-    width: 120px;
+    width: 125px;
     height: 45px;
-    border: 1px solid salmon;
+    border: 2px solid rgb(250, 128, 114);
     border-radius: 7px;
-    background-color: rgb(114, 218, 250);
-    font-size: 0.8em;
+    background-color:rgb(244, 178, 170);
+    font-size: 0.9em;
     font: bold;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 .buttonrev{
-    width: 120px;
+    width: 125px;
     height: 45px;
-    border: 1px solid salmon;
+    border: 2px solid rgb(116, 212, 47);
     border-radius: 7px;
-    background-color: rgb(250, 114, 214);
-    font-size: 0.8em;
+    background-color: rgb(168, 233, 148);
+    font-size: 1em;
     font: bold;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 .section2{
     display: flex;
     justify-content: space-between;
-    margin: 10px;
+    margin: 30px;
 }
 
 .section2 table{
@@ -118,9 +115,13 @@ p{
 .ajouter_revenus h2{
     text-align: center;
 }
+.button{
+    margin-top: 30px;
+    text-align: right;
+}
 @media screen  and (max-width:780px) {
     body{
-        background-color: blue;
+        background-color: rgb(221, 221, 235);
     }
     .mouvement{
         display: flex;
