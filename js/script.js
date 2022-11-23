@@ -208,7 +208,7 @@ const App= (function(){
     }
   };
   const deleteItem = function (index) {
-    if (confirm("Confirmez-vous la suppression de ce film ?")) {
+    if (confirm("Confirmez-vous la suppression ?")) {
       data.items.splice(index, 1);
       //mettre à jour le budget
       executDepRev.miseBudget();
