@@ -19,10 +19,16 @@ h1{
     text-align: center;
     margin-left: 50px;
     margin-right: 50px;
+    margin-bottom: 50px;
 
     
 }
 #budget{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-size: 1.2em;
     width: 150px;
     height: 60px;
     border: 2px solid black;
@@ -31,15 +37,12 @@ h1{
     margin-right: 15px;
 }
 
-p{
-    font-size: 1.2em;
-    text-align: center;
-}
 
-.liste_depense{
+.liste_depensedeprev{
     box-sizing: border-box;
     margin-left: 50px;
     margin-right: 50px;
+    padding: 0;
 }
 .section1 table{
     border-collapse: collapse;
@@ -53,14 +56,7 @@ p{
     border: 2px solid black;
     padding: 10px;
 }
-.titredep{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 5px;
-    margin-right: 10px;
-    margin-left: 10px;
-}
+
 .buttondep{
     width: 125px;
     height: 45px;
@@ -71,6 +67,9 @@ p{
     font: bold;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
+.buttondep:hover{
+    background-color: rgb(250, 128, 114);
+}
 .buttonrev{
     width: 125px;
     height: 45px;
@@ -79,22 +78,32 @@ p{
     background-color: rgb(168, 233, 148);
     font-size: 1em;
     font: bold;
+    margin-bottom: 25px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
+.buttonrev:hover{
+    background-color: rgb(116, 212, 47);
+}
 .section2{
+    text-align: center;
     display: flex;
-    justify-content: space-between;
-    margin: 30px;
+    justify-content: space-around;
+    align-items: center;
 }
-
-.section2 table{
-    border-collapse: collapse;
-    padding: 10px;
-    width: 100%;
-    margin-bottom: 15px;
+.ajouter{
+    display: flex;
+    flex-direction: column;
 }
-.section2 tr,th,td{
-    border: 2px solid black;
+.form-titre input{
+    font-size: 1em;
+    width: 250px;
+    height: 30px;
+    margin: 15px;
+}
+.form-montant input{
+    font-size: 0.9em;
+    width: 250px;
+    height: 30px;
     text-align: left;
 }
 .ajouter_depense{
@@ -118,6 +127,43 @@ p{
 .button{
     margin-top: 30px;
     text-align: right;
+}
+#title{
+    width: 200px;
+    height: 35px;
+    font-size: 1.5em;
+    border: none;
+    margin-bottom: 25px;
+}
+#amount{
+    width: 100px;
+    height: 25px;
+    font-size: 1.2em;
+    border: none;
+}
+legend{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 15px;
+}
+fieldset{
+    text-align: center;
+}
+.itemrevenu, .itemdepense
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.5em;
+    border-bottom: 1px solid saddlebrown;
+}
+.item_revenu1, .item_depense1
+{
+    margin-left: 25px;
+    display: flex;
+    align-items: center;
+}
+.symbol{
+    margin-left: 7px;
 }
 @media screen  and (max-width:780px) {
     body{

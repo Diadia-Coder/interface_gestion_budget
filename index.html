@@ -2,9 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestion-Budget</title>
+    <script
+      src="https://kit.fontawesome.com/64a8b49a16.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="./css/styles.css">
 
 </head>
@@ -17,30 +20,77 @@
                 <div>
                     <h2>Budget</h2>
                     <div id="budget">
-                       <p>120.000f CFA</p>
+                        <span id="budget_fcfa"></span> 
+                       <p id="budget_fcfa1">F CFA</p>
                     </div>
                 </div>
                 <div>
                     <h2>Dépense</h2>
                     <div id="budget">
-                       <p>100.000f CFA</p>
+                        <span id="depense_fcfa"></span>
+                       <p id="budget_fcfa1">F CFA</p>
                     </div>
                 </div>
-                <div class="budget1">
+                <div>
                     <h2>Solde</h2>
                     <div id="budget">
-                       <p>20.000f CFA</p>
+                        <span id="solde_fcfa"></span>
+                       <p id="budget_fcfa1">F CFA</p>
                     </div>
-                    <p><b>budget - depense = solde</b></p>
                 </div>
             </div>
             <!--Liste des dépenses-->
-            <div class="liste_depense">
-                <div class="titredep">
-                    <h2>Liste des Dépenses</h2>
-                    <button class="buttondep" type="submit">Ajouter Dépense</button>
+            <div class="section2">
+                <div class="ajouter">
+                    <button class="buttonrev" type="submit" id ="btn_ajout_rev">Ajouter Revenu</button>
+                    <button class="buttondep" type="submit" id ="btn_ajout_dep">Ajouter Dépense</button>
                 </div>
-               <table>
+                <fieldset>
+                    <legend>Ajouter Depense ou Revenu</legend>
+                    <div id="formAjouter">
+                        <input type="text" name="title" id="title" class="form-control" placeholder="Titre" required />
+                        <input type="number" name="amount" id="amount" class="form-control" placeholder="Montant" required />
+                    </div>
+                </fieldset>
+            </div>
+            <!--Liste des Revenus-->
+            <div class="liste_depensedeprev">
+                    <fieldset id="list_revenu">
+                        <legend><h2>Liste des Revenus</h2></legend>
+                        <!-- <div class="itemrevenu">
+                            <h4>Gainssrdtfyguhij</h4>
+                            <div class="item_revenu1">
+                                <span class="item_revenu">200</span>
+                                <p class="symbol">FCFA</p>
+                            </div>
+                        </div> -->
+                    </fieldset>
+                <!-- <table class="table">
+                     <thead>
+                        <tr>
+                            <th>Titre</th>
+                            <th>Montant</th>
+                            <th>Actions</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+ 
+                     </tbody>
+                </table> -->
+            </div>
+            <div class="liste_depensedeprev">
+                <fieldset id="list_depense">
+                    <legend><h2>Liste des Dépenses</h2></legend>
+                    <!-- <div class="itemdepense">
+                        <h4>Gainssrdtfyguhij</h4>
+                        <div class="item_depense1">
+                            <span class="item_depense">200</span>
+                            <p class="symbol">FCFA</p>
+                        </div>
+                        <p><a class="modif" href="#">Modifier</a> | <a class="sup" href="#">Suprimer</a></p>
+                    </div> -->
+                </fieldset>
+               <!-- <table>
                     <thead>
                         <tr>
                             <th>Titre</th>
@@ -49,84 +99,12 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>Nouriture</td>
-                            <td>2000</td>
-                            <td>Modifier | Suprimer</td>
-                        </tr>
-                        <tr>
-                            <td>Café</td>
-                            <td>100</td>
-                            <td>Modifier | Suprimer</td>
-                        </tr>
+                       
                     </tbody>
-               </table>
+               </table> -->
             </div>
-            <!--Liste des Revenus-->
-            <div class="liste_depense">
-                <div class="titredep">
-                    <h2>Liste des Revenus</h2>
-                    <button class="buttonrev" type="submit">Ajouter Revenu</button>
-                </div>
-                <table>
-                     <thead>
-                         <tr>
-                             <th>Titre</th>
-                             <th>Montant</th>
-                             <th>Actions</th>
-                         </tr>
-                     </thead>
-                     <tbody>
-                         <tr>
-                             <td>Salaire</td>
-                             <td>300.000</td>
-                             <td>Modifier | Suprimer</td>
-                         </tr>
-                         <tr>
-                             <td>Bonus</td>
-                             <td>100</td>
-                             <td>Modifier | Suprimer</td>
-                         </tr>
-                     </tbody>
-                </table>
-             </div>
-        </div>
-        <!--Les deux Formulaire pour Ajouter Depense et Revenu-->
-        <div class="section2">
-            <div class="ajouter_depense">
-                <h2>Ajouter Depense</h2>
-                <table>
-                    <tr>
-                        <th>Titre</th>
-                        <td>Café</td>
-                    </tr>
-                    <tr>
-                        <th>Montant</th>
-                        <td>100</td>
-                    </tr>
-                </table>
-                <div class="button">
-                    <button class="buttondep" type="submit">Valider</button>
-                </div>
-            </div>
-            <div class="ajouter_revenus">
-                <h2>Ajouter Revenus</h2>
-                <table>
-                    <tr>
-                        <th>Titre</th>
-                        <td>Salaire</td>
-                    </tr>
-                    <tr>
-                        <th>Montant</th>
-                        <td>300.000</td>
-                    </tr>
-                </table>
-                <div class="button">
-                    <button class="buttonrev" type="submit">Valider</button>
-                </div>
-            </div>                            
-
         </div>
     </div>
+    <script src="./js/script.js" defer></script>
 </body>
 </html>
