@@ -109,8 +109,8 @@ const executDepRev=(function(){
       <div class="item_depense1">
         <span class="item_depense">${item.amount}</span>
         <p class="symbol">F CFA</p>
-        <p><a class="modif" href="#title">Modifier</a> | <a class="sup" href="">Suprimer</a></p>
       </div>
+      <p><a class="modif" href="#title">Modifier</a> | <a class="sup" href="">Suprimer</a></p>
       `;
       document.querySelector(Selecteur.depense).insertAdjacentElement("beforeend", div)
     },
